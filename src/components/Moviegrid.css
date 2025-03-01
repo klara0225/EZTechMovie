@@ -1,0 +1,14 @@
+.movie-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(92, 10, 10);
+    padding: 10px;
+}
+.movie{
+    background-color: #fcfcfd;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+}
