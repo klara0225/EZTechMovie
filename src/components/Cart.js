@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
 
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 function Cart() {
   const [cart, setCart] = useState([]);
 
@@ -13,9 +14,11 @@ function Cart() {
     <div>
       <h1>Your Cart</h1>
       {cart.map((item, index)=> (<div className="item">{item.name} ${item.price}</div>))}
-      
-
-      <button onClick={() => alert('Temporary not available')}>Checkout</button>
+      <Link to='/checkout'>
+            <button>
+            Checkout
+            </button>
+ </Link> 
     </div>
   );
 
